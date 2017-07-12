@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+            text-align: center;
+            background: rgb(68, 181, 255);
+            background-size: cover;
+            color: white;
+    }
+    a {
+       color: white;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    ul {
+        padding: 10px;
+        background: rgba(0,0,0,0.5);
+    }
+    li {
+        display: inline;
+        padding: 0px 10px 0px 10px;
+    }
+    article {
+             max-width: 500px;
+             padding: 20px;
+             margin: 0 auto;
+             }
+    @media (max-width: 500px){
+      h1 {
+        font-size: 36px;
+          }
+      li {
+          display: block;
+          padding: 5px;
+          }    
+    }     
+  </style>
+</head>
+<body>
+  <header>
+    <h1>In Sync</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">The App</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </header>
+
+</body>
+</html>
