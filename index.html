@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+            text-align: center;
+            background: rgb(68, 181, 255);
+            background-size: cover;
+            color: white;
+    }
+    a {
+       color: white;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    ul {
+        padding: 10px;
+        background: rgba(0,0,0,0.5);
+    }
+    li {
+        display: inline;
+        padding: 0px 10px 0px 10px;
+    }
+    article {
+             max-width: 500px;
+             padding: 20px;
+             margin: 0 auto;
+             }
+    @media (max-width: 500px){
+      h1 {
+        font-size: 36px;
+          }
+      li {
+          display: block;
+          padding: 5px;
+          }    
+    }     
+  </style>
 </head>
-<style>
-</style>
 <body>
-  <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
+  <header>
+    <h1>In Sync</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">The App</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </header>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-  
 </body>
 </html>
