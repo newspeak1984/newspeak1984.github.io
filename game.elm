@@ -76,7 +76,7 @@ menuView model = [rect 10 1000
                             |> move(0,100)
                             |> rotate (degrees (sin (model.time/4)))
                             |> scale (0.5*(abs (sin (model.time/4))+1))
-                         , group [ circle 100
+                         , group [ roundedRect 200 200 10
                             |> filled green
                             |> move (-120,-50)
                          , text "START"
@@ -86,7 +86,7 @@ menuView model = [rect 10 1000
                             |> move (-120,-65)
                             |> rotate (degrees (tan (model.time/25)))
                          ] |> notifyMouseDown StartGame
-                         , group [ circle 100
+                         , group [ roundedRect 200 200 10
                             |> filled orange
                             |> move (120,-50)
                          , text "INSTRUCTIONS"
@@ -133,7 +133,7 @@ logangInstructionsView model = [text "How to play: "
                             |> filled black
                             |> move (0,20)
 
-                         , group [circle 100
+                         , group [roundedRect 200 200 10
                             |> filled green
                             |> move (0, -150)
                          , text "Main Menu"
@@ -156,7 +156,7 @@ endView model score = [text "You Win!"
                             |> centered
                             |> filled black
                             |> move (0,-200)
-                         , group [circle 100
+                         , group [roundedRect 200 200 10
                             |> filled green
                          , text "RESET"
                             |> size 50
@@ -173,7 +173,7 @@ failView model = [ text "Take this L!"
                             |> filled white
                             |> addOutline (solid 2) darkRed
                             |> move(0,150)
-                         , group [ circle 100
+                         , group [ roundedRect 200 200 10
                             |> filled darkRed
                          , text "RESET"
                             |> size 50
